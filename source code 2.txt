@@ -1,3 +1,10 @@
+from datetime import datetime
+host_path='C:\Windows\System32\drivers\etc'
+redirect="127.0.0.1"
+website_list=["www.facebook.com","www.instagram.com"]
+start_date=datetime(2022,12,18)
+end_date=datetime(2022,12,20)
+today_date=datetime(datetime.now().year,datetime.now().month,datetime.now().day)
 while True:
     if start_date<=today_date<end_date:
         with open(host_path,"r+",)as file:
@@ -9,3 +16,4 @@ while True:
                     file.write(redirect+" "+website+"\n")           
         print("Website is blocked")
         break
+
