@@ -1,0 +1,11 @@
+while True:
+    if start_date<=today_date<end_date:
+        with open(host_path,"r+",)as file:
+            content=file.read()
+            for website in website_list:
+                if website in content:
+                    pass
+                else:
+                    file.write(redirect+" "+website+"\n")           
+        print("Website is blocked")
+        break
