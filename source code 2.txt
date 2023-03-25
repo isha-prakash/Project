@@ -9,4 +9,4 @@ while True:
                     file.write(redirect+" "+website+"\n")           
         print("Website is blocked")
         break
-
+    
